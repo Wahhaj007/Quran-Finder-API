@@ -1,11 +1,4 @@
 class User:
-    __firstName: str
-    __lastName: str
-    __email: str
-    __id: int
-    __bio: str
-    timeZone: str
-
     def __init__(self, firstName: str, lastName: str, 
                 email: str, id: int, bio: str, 
                 timeZone: str):

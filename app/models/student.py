@@ -8,14 +8,10 @@ class Skill(Enum):
 
 
 class Student(User):
-    __scheduldAppointment : list
-    skillLevel : Skill
-    __reqestSent: list
-
     def __init__(self,skillLevel:Skill):
         super().__init__()
         self.__scheduldAppointment = []
-        self.skillLevel = skillLevel
+        self.__skillLevel = skillLevel
         self.__reqestSent = [] 
 
     def setSkillLevel(self,skillLevel):
